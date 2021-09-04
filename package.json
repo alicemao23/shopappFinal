@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,8 @@
     "jsonwebtoken": "^5.5.4",
     "random-string": "^0.1.2",
     "sequelize": "^3.14.1",
-    "sqlite3": "^3.1.1"
-  }
+    "sqlite3": "^4.0.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
